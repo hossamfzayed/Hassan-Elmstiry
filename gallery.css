@@ -1,0 +1,92 @@
+body {
+  background: #fff;
+  overflow: auto;
+}
+body::after {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  top: 30px;
+  width: 100%;
+  background: none;
+  z-index: 100;
+}
+nav .container {
+  background-color: #333;
+  width: auto;
+  height: 60px;
+  padding: 14px 18px;
+  border-radius: 4px;
+}
+
+.content {
+  margin-top: 120px;
+}
+.content h1 {
+  text-align: center;
+  font-size: 32px;
+}
+.content p {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #6d6d6d;
+  width: 360px;
+  margin: 10px auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 0.4em;
+}
+
+.side {
+  width: 32%;
+  justify-content: space-between;
+}
+.side img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0.1em 0;
+  cursor: pointer;
+}
+
+footer {
+  display: block;
+  position: unset;
+  width: 100%;
+  text-align: center;
+  transform: none;
+  color: #333;
+}
+
+.show {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+.show .imgbox {
+  position: relative;
+}
+.show img {
+  max-width: 400px;
+}
+.show .exit {
+  color: white;
+  position: absolute;
+  right: -60px;
+  top: -10px;
+  cursor: pointer;
+}/*# sourceMappingURL=gallery.css.map */
